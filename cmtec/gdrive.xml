@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>Downloaders:</Category>
+  <Name>gdrive</Name>
+  <Description>
+    drive is a tiny program to pull or push Google Drive files.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/cmtec/gdrive/</Registry>
+  <Repository>cmtec/gdrive</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort></ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/root/gdrive</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <Icon>http://icons.iconarchive.com/icons/marcus-roberto/google-play/64/Google-Drive-icon.png</Icon>
+  <Banner></Banner>
+</Container>
