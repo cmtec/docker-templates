@@ -4,7 +4,9 @@
 <Category>VersionControl:</Category>
   <Name>gogs</Name>
   <Description>
-    A painless self-hosted Git service.
+  A painless self-hosted Git service.
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/data[/b] : Storing all gogs config files and git repositories[br]
   </Description>
   <Registry>https://registry.hub.docker.com/r/gogs/gogs/</Registry>
   <Repository>gogs/gogs</Repository>
@@ -38,6 +40,7 @@
       <Mode>rw</Mode>
     </Volume> 
   </Data>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <Icon>https://try.gogs.io/img/favicon.png</Icon>
   <Banner></Banner>
 </Container>
