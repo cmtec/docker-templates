@@ -34,7 +34,7 @@
     </Volume> 
   </Data>
   <WebUI>http://[IP]:[PORT:8086]/</WebUI>
-  <Icon>https://avatars1.githubusercontent.com/u/5195806?v=3&s=140</Icon>
+  <Icon>https://lh4.googleusercontent.com/-Dwr28KLpNuY/UmTOmMLSBSI/AAAAAAAAACw/YtYH570unOc/s250-no/cmtec_logo_big.png</Icon>
   <Banner></Banner>
   <ExtraParams>--device /dev/ttyACM0</ExtraParams>
 </Container>
