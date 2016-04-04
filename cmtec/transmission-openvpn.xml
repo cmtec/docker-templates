@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>Download:</Category>
+  <Name>transmission-openvpn</Name>
+  <Description>
+   Docker container which runs Transmission torrent client with WebUI while connecting to OpenVPN. 
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/haugene/transmission-openvpn/</Registry>
+  <Repository>haugene/transmission-openvpn</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9091</HostPort>
+        <ContainerPort>9091</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>OPENVPN_PROVIDER</Name>
+      <Value>CUSTOM</Value>
+    </Variable>
+    <Variable>
+      <Name>OPENVPN_USERNAME</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>OPENVPN_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>TRANSMISSION_HOME</Name>
+      <Value>/config</Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/openvpn/custom/default.ovpn</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:9091]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-icon.png</Icon>
+  <Banner></Banner>
+  <ExtraParams>--dns 8.8.8.8 --dns 8.8.4.4</ExtraParams>
+</Container>
