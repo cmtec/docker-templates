@@ -23,7 +23,7 @@
   <Environment>
     <Variable>
       <Name>OPENVPN_PROVIDER</Name>
-      <Value>CUSTOM</Value>
+      <Value></Value>
     </Variable>
     <Variable>
       <Name>OPENVPN_USERNAME</Name>
@@ -47,11 +47,6 @@
      <Volume>
       <HostDir></HostDir>
       <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume> 
-     <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/etc/openvpn/custom/default.ovpn</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
