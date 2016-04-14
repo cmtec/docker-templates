@@ -21,22 +21,6 @@
     </Publish>
   </Networking>
   <Environment>
-    <Variable>
-      <Name>OPENVPN_PROVIDER</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>OPENVPN_USERNAME</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>OPENVPN_PASSWORD</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>TRANSMISSION_HOME</Name>
-      <Value>/config</Value>
-    </Variable>
   </Environment>
   <Data>
      <Volume>
@@ -46,7 +30,32 @@
     </Volume> 
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/m</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/tv-shows</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/t</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/files</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/f</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
