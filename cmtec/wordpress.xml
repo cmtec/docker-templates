@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>Web:</Category>
+  <Name>wordpress</Name>
+  <Description>
+  The WordPress rich content management system can utilize plugins, widgets, and themes.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/cmtec/wordpress/</Registry>
+  <Repository>cmtec/wordpress</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8099</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:8099]/</WebUI>
+  <Icon>https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png</Icon>
+  <Banner></Banner>
+</Container>
