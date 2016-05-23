@@ -32,6 +32,6 @@
       <Mode>rw</Mode>
     </Volume> 
   </Data>
-  <Icon>http://img11.deviantart.net/fa7b/i/2012/262/1/3/tftpserver_flurry_ios_style_icon_by_flakshack-d5f885v.png</Icon>
+  <Icon>https://raw.githubusercontent.com/cmtec/docker-templates/master/images/tftpd.png</Icon>
   <Banner></Banner>
 </Container>
