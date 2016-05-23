@@ -2,11 +2,11 @@
 <Container>
   <Beta>True</Beta>
 <Category>Network:</Category>
-  <Name>tftp</Name>
+  <Name>tftpd</Name>
   <Description>
   </Description>
-  <Registry>https://registry.hub.docker.com/u/cmtec/tftp/</Registry>
-  <Repository>cmtec/tftp</Repository>
+  <Registry>https://registry.hub.docker.com/u/cmtec/tftpd/</Registry>
+  <Repository>cmtec/tftpd</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
