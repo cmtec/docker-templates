@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>VersionControl:</Category>
+  <Name>gitlab</Name>
+  <Description>The platform for modern developers
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/gitlab/gitlab-ce/</Registry>
+  <Repository>gitlab/gitlab-ce</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>22</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>8099</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/opt/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/log/gitlab</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:8099]/</WebUI>
+  <Icon>https://gitlab.com/uploads/system/project/avatar/13083/logo-extra-whitespace.png</Icon>
+  <Banner></Banner>
+</Container>
