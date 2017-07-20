@@ -18,8 +18,8 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>80</HostPort>
-        <ContainerPort>8099</ContainerPort>
+        <HostPort>8099</HostPort>
+        <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
