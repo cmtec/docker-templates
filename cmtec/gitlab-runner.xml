@@ -28,7 +28,7 @@
     </Volume> 
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/home/gitlab-runner</ContainerDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
