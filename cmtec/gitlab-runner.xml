@@ -27,7 +27,7 @@
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
-      <HostDir></HostDir>
+      <HostDir>/var/run/docker.sock</HostDir>
       <ContainerDir>/var/run/docker.sock</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
