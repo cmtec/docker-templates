@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>VersionControl:</Category>
+  <Name>gitlab-runner</Name>
+  <Description>GitLab CI Multi Runner used to fetch and run pipeline jobs with GitLab CI
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/gitlab/gitlab-runner/</Registry>
+  <Repository>gitlab/gitlab-runner</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/gitlab-runner</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/home/gitlab-runner</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png</Icon>
+  <Banner></Banner>
+</Container>
