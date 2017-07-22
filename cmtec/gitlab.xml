@@ -53,6 +53,6 @@
     </Volume> 
   </Data>
   <WebUI>http://[IP]:[PORT:8099]/</WebUI>
-  <Icon>https://gitlab.com/uploads/system/project/avatar/13083/logo-extra-whitespace.png</Icon>
+  <Icon>https://gitlab.com/uploads/-/system/group/avatar/6543/logo-extra-whitespace.png</Icon>
   <Banner></Banner>
 </Container>
