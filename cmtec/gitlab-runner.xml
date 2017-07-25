@@ -22,11 +22,13 @@
   </Environment>
   <Data>
      <Volume>
+	  <Name>Docker Config Files</Name>
       <HostDir></HostDir>
       <ContainerDir>/etc/gitlab-runner</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
+	  <Name>Docker Socket</Name>
       <HostDir>/var/run/docker.sock</HostDir>
       <ContainerDir>/var/run/docker.sock</ContainerDir>
       <Mode>rw</Mode>
