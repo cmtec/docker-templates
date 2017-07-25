@@ -13,17 +13,20 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
+        <Name>SSH</Name>
         <HostPort>22</HostPort>
         <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <Name>Web HTTP</Name>
         <HostPort>8099</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>443</HostPort>
+        <Name>Web HTTPS</Name>
+        <HostPort>4439</HostPort>
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -37,22 +40,43 @@
   </Environment>
   <Data>
      <Volume>
+      <Name>GitLab Config Files</Name>
       <HostDir></HostDir>
       <ContainerDir>/etc/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
+      <Name>GitLab Data Files</Name>
       <HostDir></HostDir>
       <ContainerDir>/var/opt/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
+      <Name>GitLab Log Files</Name>
       <HostDir></HostDir>
       <ContainerDir>/var/log/gitlab</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
+    <Volume>
+      <Name>GitLab Docker Registry Files</Name>
+      <HostDir></HostDir>
+      <ContainerDir>/gitlab-registry</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <Name>GitLab LFS Files</Name>
+      <HostDir></HostDir>
+      <ContainerDir>/gitlab-lfs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <Name>Shared SSL Keys</Name>
+      <HostDir></HostDir>
+      <ContainerDir>/ssl-keys</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8099]/</WebUI>
-  <Icon>https://gitlab.com/uploads/system/project/avatar/13083/logo-extra-whitespace.png</Icon>
+  <Icon>https://gitlab.com/uploads/-/system/group/avatar/6543/logo-extra-whitespace.png</Icon>
   <Banner></Banner>
 </Container>
