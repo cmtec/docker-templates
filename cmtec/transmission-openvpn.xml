@@ -6,8 +6,8 @@
   <Description>
    Docker container which runs Transmission torrent client with WebUI while connecting to OpenVPN. 
   </Description>
-  <Registry>https://registry.hub.docker.com/u/haugene/transmission-openvpn/</Registry>
-  <Repository>haugene/transmission-openvpn</Repository>
+  <Registry>https://registry.hub.docker.com/u/cmtec/transmission-openvpn/</Registry>
+  <Repository>cmtec/transmission-openvpn</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
