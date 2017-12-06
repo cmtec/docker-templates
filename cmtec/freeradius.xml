@@ -48,6 +48,6 @@
     </Volume> 
   </Data>
   <WebUI></WebUI>
-  <Icon>https://www.google.se/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiOiJL-g_bXAhVqCpoKHdFFC0QQjRwIBw&url=http%3A%2F%2Fwww.pontoisp.com.br%2Fservidor-de-autenticacao-freeradius-para-isp%2F&psig=AOvVaw3X2t4o7ZNOVYlfs76R0ARK&ust=1512671784331677</Icon>
+  <Icon>https://raw.githubusercontent.com/cmtec/docker-templates/master/images/Freeradius_logo.png</Icon>
   <Banner></Banner>
 </Container>
