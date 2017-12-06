@@ -23,6 +23,11 @@
   <Environment>
   </Environment>
   <Data>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
      <Volume>
       <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
@@ -65,7 +70,7 @@
     </Volume> 
   </Data>
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-icon.png</Icon>
+  <Icon>https://github.com/cmtec/docker-templates/blob/master/images/transmission-ovpn.png?raw=true</Icon>
   <Banner></Banner>
-  <ExtraParams>--dns 8.8.8.8 --dns 8.8.4.4 --cap-add NET_ADMIN</ExtraParams>
+  <ExtraParams>--dns 46.227.67.134 --dns 46.227.67.135 --cpuset-cpus=6,7 --cap-add NET_ADMIN</ExtraParams>
 </Container>
