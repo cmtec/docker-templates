@@ -6,10 +6,10 @@
   <Description>
    Docker container which runs Transmission torrent client with WebUI while connecting to OpenVPN. 
   </Description>
-  <Registry>https://registry.hub.docker.com/u/haugene/transmission-openvpn/</Registry>
-  <Repository>haugene/transmission-openvpn</Repository>
+  <Registry>https://registry.hub.docker.com/u/cmtec/transmission-openvpn/</Registry>
+  <Repository>cmtec/transmission-openvpn</Repository>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -26,6 +26,11 @@
      <Volume>
       <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
@@ -62,5 +67,5 @@
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-icon.png</Icon>
   <Banner></Banner>
-  <ExtraParams>--dns 8.8.8.8 --dns 8.8.4.4</ExtraParams>
+  <ExtraParams>--dns 8.8.8.8 --dns 8.8.4.4 --cap-add NET_ADMIN</ExtraParams>
 </Container>
