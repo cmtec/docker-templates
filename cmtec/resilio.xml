@@ -44,6 +44,6 @@
     </Volume> 
   </Data>
   <WebUI>https://[IP]:[PORT:8888]/</WebUI>
-  <Icon>https://avatars1.githubusercontent.com/u/12284211?s=200&v=4</Icon>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/resilio.png</Icon>
   <Banner></Banner>
 </Container>
