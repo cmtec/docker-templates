@@ -39,7 +39,7 @@ BackupPC is a high-performance, enterprise-grade system for backing up to a serv
     </Volume> 
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/home/backuppc</ContainerDir>
+      <ContainerDir>/data/backuppc</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
