@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>Web:</Category>
+  <Name>backuppc</Name>
+  <Description>
+BackupPC is a high-performance, enterprise-grade system for backing up to a server's disk.
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/adferrand/backuppc/</Registry>
+  <Repository>adferrand/backuppc</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/backuppc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/home/backuppc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/home/backuppc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>https://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/backuppc.png</Icon>
+  <Banner></Banner>
+</Container>
