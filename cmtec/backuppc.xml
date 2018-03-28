@@ -44,6 +44,6 @@ BackupPC is a high-performance, enterprise-grade system for backing up to a serv
     </Volume> 
   </Data>
   <WebUI>https://[IP]:[PORT:8080]/</WebUI>
-  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/backuppc.png</Icon>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/backuppc_96.png</Icon>
   <Banner></Banner>
 </Container>
