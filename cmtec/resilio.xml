@@ -4,10 +4,10 @@
 <Category>Web:</Category>
   <Name>resilio</Name>
   <Description>
-	All Your Data, Across All Your Devices
+Fast, private file sharing for teams and individuals.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/cmtec/resilio/</Registry>
-  <Repository>cmtec/resilio</Repository>
+  <Registry>https://registry.hub.docker.com/r/resilio/sync/</Registry>
+  <Repository>resilio/sync</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
@@ -34,16 +34,17 @@
   <Data>
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/resilio</ContainerDir>
+      <ContainerDir>/mnt/sync</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/mnt/mounted_folders</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
   <WebUI>https://[IP]:[PORT:8888]/</WebUI>
   <Icon>https://github.com/cmtec/docker-templates/raw/master/images/resilio.png</Icon>
   <Banner></Banner>
+  <ExtraParams>--restart on-failure</ExtraParams>
 </Container>
