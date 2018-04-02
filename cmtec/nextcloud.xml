@@ -4,7 +4,7 @@
 <Category>Web:</Category>
   <Name>nextcloud</Name>
   <Description>
-A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
+A safe home for all your data. Access and share your files, calendars, contacts, mail and more from any device, on your terms.
   </Description>
   <Registry>https://registry.hub.docker.com/_/nextcloud/</Registry>
   <Repository>nextcloud</Repository>
