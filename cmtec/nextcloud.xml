@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>Web:</Category>
+  <Name>nextcloud</Name>
+  <Description>
+A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
+  </Description>
+  <Registry>https://registry.hub.docker.com/_/nextcloud/</Registry>
+  <Repository>nextcloud</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/nextcloud.png</Icon>
+  <Banner></Banner>
+</Container>
