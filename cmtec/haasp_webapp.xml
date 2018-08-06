@@ -33,7 +33,7 @@
       <Mode>rw</Mode>
     </Volume> 
   </Data>
-  <WebUI></WebUI>
+  <webui>http://[ip]:[port:8081]/</webui>
   <Icon>https://github.com/cmtec/docker-templates/raw/master/images/HAASP_ICON_512.png</Icon>
   <Banner></Banner>
 </Container>
