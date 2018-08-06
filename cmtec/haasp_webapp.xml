@@ -14,23 +14,13 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>6120</HostPort>
-        <ContainerPort>6120</ContainerPort>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>6121</HostPort>
-        <ContainerPort>6121</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>6122</HostPort>
-        <ContainerPort>6122</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>6123</HostPort>
-        <ContainerPort>6123</ContainerPort>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
