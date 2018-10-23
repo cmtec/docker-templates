@@ -37,6 +37,11 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/pages</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
   </Data>
   <WebUI></WebUI>
   <Icon>https://cdn.wp.nginx.com/wp-content/themes/nginx-theme/assets/img//nginx_n_icon.png</Icon>
