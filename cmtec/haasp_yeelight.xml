@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>HomeAutomation:</Category>
+  <Name>haasp_yeelight</Name>
+  <Description>
+  Home Automation And Security Platform
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/cmtec/haasp_yeelight/</Registry>
+  <Repository>cmtec/haasp_yeelight</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1982</HostPort>
+        <ContainerPort>1982</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>HAASP_CORE_IP</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/HAASP_ICON_512.png</Icon>
+  <Banner></Banner>
+</Container>
