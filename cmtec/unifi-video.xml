@@ -81,7 +81,7 @@
   <Data>
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>pducharme/unifi-video-controller</ContainerDir>
+      <ContainerDir>/var/lib/unifi-video</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
