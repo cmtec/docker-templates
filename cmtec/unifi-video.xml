@@ -6,16 +6,16 @@
   <Description>
   Easily scale IP surveillance camrea network to hundreds of plug and play, high-performance devices across multiple locations.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/cmtec/unifi-video/</Registry>
-  <Repository>cmtec/unifi-video</Repository>
+  <Registry>https://registry.hub.docker.com/u/pducharme/unifi-video-controller/</Registry>
+  <Repository>pducharme/unifi-video-controller</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>22</HostPort>
-        <ContainerPort>22</ContainerPort>
+        <HostPort>1935</HostPort>
+        <ContainerPort>1935</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
@@ -62,23 +62,36 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>DEBUG</Name>
+      <Value>0</Value>
+    </Variable>
+    <Variable>
+      <Name>TZ</Name>
+      <Value>Europe/Stockholm</Value>
     </Variable>
   </Environment>
   <Data>
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>pducharme/unifi-video-controller</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
      <Volume>
       <HostDir></HostDir>
-      <ContainerDir>/videos</ContainerDir>
+      <ContainerDir>/var/lib/unifi-video/videos</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
   </Data>
   <WebUI>https://[IP]:[PORT:7443]/</WebUI>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <Banner></Banner>
+  <ExtraParams>--cap-add NET_ADMIN --cap-add DAC_READ_SEARCH</ExtraParams>
 </Container>
