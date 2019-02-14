@@ -6,8 +6,8 @@
   <Description>
   Easily scale IP surveillance camrea network to hundreds of plug and play, high-performance devices across multiple locations.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/pducharme/unifi-video-controller/</Registry>
-  <Repository>pducharme/unifi-video-controller</Repository>
+  <Registry>https://registry.hub.docker.com/u/cmtec/unifi-video/</Registry>
+  <Repository>cmtec/unifi-video</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
