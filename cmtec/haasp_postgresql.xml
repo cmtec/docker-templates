@@ -2,12 +2,12 @@
 <Container>
   <Beta>True</Beta>
 <Category>HomeAutomation:</Category>
-  <Name>haasp_history</Name>
+  <Name>haasp_postgresql</Name>
   <Description>
   Home Automation And Security Platform
   </Description>
-  <Registry>https://registry.hub.docker.com/u/cmtec/haasp_history/</Registry>
-  <Repository>cmtec/haasp_history</Repository>
+  <Registry>https://registry.hub.docker.com/u/cmtec/haasp_postgresql/</Registry>
+  <Repository>cmtec/haasp_postgresql</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
