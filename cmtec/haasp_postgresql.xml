@@ -20,6 +20,10 @@
       <Name>HAASP_CORE_IP</Name>
       <Value></Value>
     </Variable>
+    <Variable>
+      <Name>CLIENT_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
   </Environment>
   <Data>
      <Volume>
