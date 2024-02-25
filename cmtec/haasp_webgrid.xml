@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>True</Beta>
+<Category>HomeAutomation:</Category>
+  <Name>haasp_webgrid</Name>
+  <Description>
+  Home Automation And Security Platform
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/cmtec/haasp_webgrid/</Registry>
+  <Repository>cmtec/haasp_webgrid</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>HAASP_CORE_IP</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+     <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+  </Data>
+  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <Icon>https://github.com/cmtec/docker-templates/raw/master/images/HAASP_ICON_512.png</Icon>
+  <Banner></Banner>
+</Container>
